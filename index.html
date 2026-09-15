@@ -1,35 +1,130 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>YY1 Project</title>
-    <style>
-        body {
-            font-family: system-ui, -apple-system, sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            background-color: #f4f4f9;
-            color: #333;
-        }
-        .container {
-            text-align: center;
-            background: white;
-            padding: 2rem 3rem;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-        h1 { color: #2563eb; margin-bottom: 0.5rem; }
-        p { color: #666; }
-    </style>
+    <title>MegaTech Cyprus | IT Solutions & Web Development</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <div class="container">
-        <h1>Welcome to YY1</h1>
-        <p>Your repository is set up and ready to go!</p>
-    </div>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased">
+
+    <!-- Header / Navbar -->
+    <header class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <div class="flex items-center space-x-2">
+                <span class="text-2xl font-black tracking-tight text-blue-600">Mega<span class="text-slate-900">Tech.cy</span></span>
+            </div>
+            <nav class="hidden md:flex space-x-8 font-medium text-slate-600">
+                <a href="#services" class="hover:text-blue-600 transition">Services</a>
+                <a href="#about" class="hover:text-blue-600 transition">About</a>
+                <a href="#contact" class="hover:text-blue-600 transition">Contact</a>
+            </nav>
+            <div>
+                <a href="#contact" class="bg-blue-600 hover:bg-blue-700 text-white font-medium px-5 py-2.5 rounded-lg transition shadow-sm shadow-blue-500/20">Get a Quote</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative overflow-hidden pt-20 pb-32 lg:pt-32 lg:pb-40 bg-gradient-to-b from-blue-50/50 to-slate-50">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <span class="inline-block bg-blue-100 text-blue-700 text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-wider mb-6">Innovative Digital Solutions in Cyprus</span>
+            <h1 class="text-4xl sm:text-6xl font-extrabold text-slate-900 tracking-tight max-w-4xl mx-auto leading-tight">
+                Empowering Your Business With <span class="text-blue-600">Advanced Technology</span>
+            </h1>
+            <p class="mt-6 text-lg sm:text-xl text-slate-600 max-w-2xl mx-auto">
+                From high-performance web development and cloud infrastructure to robust IT solutions, we build the digital foundation your business needs to scale.
+            </p>
+            <div class="mt-10 flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#contact" class="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-8 py-4 rounded-xl transition shadow-lg shadow-blue-600/30">Start Your Project</a>
+                <a href="#services" class="bg-white hover:bg-slate-100 text-slate-700 border border-slate-300 font-semibold px-8 py-4 rounded-xl transition">Explore Services</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">What We Do</h2>
+                <p class="mt-4 text-lg text-slate-600">Comprehensive technology services designed to drive growth and operational efficiency.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="p-8 rounded-2xl bg-slate-50 border border-slate-100 hover:border-blue-200 transition group">
+                    <div class="w-12 h-12 bg-blue-600 text-white rounded-xl flex items-center justify-center font-bold text-xl mb-6 shadow-md group-hover:scale-110 transition">💻</div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">Web Development & Apps</h3>
+                    <p class="text-slate-600 leading-relaxed">Custom web applications, responsive UI/UX design, and e-commerce platforms engineered for performance and conversion.</p>
+                </div>
+                <!-- Service 2 -->
+                <div class="p-8 rounded-2xl bg-slate-50 border border-slate-100 hover:border-blue-200 transition group">
+                    <div class="w-12 h-12 bg-blue-600 text-white rounded-xl flex items-center justify-center font-bold text-xl mb-6 shadow-md group-hover:scale-110 transition">☁️</div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">Cloud & Server Infrastructure</h3>
+                    <p class="text-slate-600 leading-relaxed">Reliable server management, Nginx configurations, hosting optimization, SSL deployment, and secure DNS routing.</p>
+                </div>
+                <!-- Service 3 -->
+                <div class="p-8 rounded-2xl bg-slate-50 border border-slate-100 hover:border-blue-200 transition group">
+                    <div class="w-12 h-12 bg-blue-600 text-white rounded-xl flex items-center justify-center font-bold text-xl mb-6 shadow-md group-hover:scale-110 transition">⚡</div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">Digital Automation</h3>
+                    <p class="text-slate-600 leading-relaxed">Streamlining workflows, building custom tools, and automating routine tasks to save time and scale productivity.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-24 bg-slate-50 border-t border-slate-200">
+        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+            <div>
+                <span class="text-blue-600 font-semibold tracking-wide uppercase text-sm">About MegaTech.cy</span>
+                <h2 class="text-3xl font-bold text-slate-900 mt-2 mb-6">Engineered for Excellence in Nicosia & Across Cyprus</h2>
+                <p class="text-slate-600 leading-relaxed mb-4">
+                    Based in Nicosia, MegaTech.cy delivers modern digital solutions tailored to businesses looking to stand out. We combine technical precision with clean aesthetics to ensure your digital presence is fast, secure, and impactful.
+                </p>
+                <p class="text-slate-600 leading-relaxed">
+                    Whether you need a full-scale web platform, system optimization, or reliable tech consultation, we turn complex challenges into seamless digital experiences.
+                </p>
+            </div>
+            <div class="bg-blue-600 p-1 rounded-3xl shadow-xl">
+                <div class="bg-slate-900 p-8 rounded-[22px] text-white">
+                    <h3 class="text-xl font-bold mb-4 text-blue-400">Why Partner With Us?</h3>
+                    <ul class="space-y-4 text-slate-300">
+                        <li class="flex items-center space-x-3"><span>✓</span> <span>Modern tech stack (React, Node.js, Tailwind)</span></li>
+                        <li class="flex items-center space-x-3"><span>✓</span> <span>Optimized for speed and high security</span></li>
+                        <li class="flex items-center space-x-3"><span>✓</span> <span>Dedicated local support in Cyprus</span></li>
+                        <li class="flex items-center space-x-3"><span>✓</span> <span>Scalable architectures built for growth</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-24 bg-white border-t border-slate-200">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold text-slate-900 mb-4">Ready to Build Something Great?</h2>
+            <p class="text-slate-600 mb-8">Get in touch with us today to discuss your next project or technical requirement.</p>
+            <div class="inline-block bg-slate-50 border border-slate-200 p-8 rounded-2xl shadow-sm">
+                <p class="text-slate-700 font-medium mb-2">Reach out directly via email:</p>
+                <a href="mailto:info@megatech.cy" class="text-xl sm:text-2xl font-bold text-blue-600 hover:underline">info@megatech.cy</a>
+                <p class="text-xs text-slate-400 mt-4">Nicosia, Cyprus</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-slate-400 py-12">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <p class="text-sm">&copy; 2026 MegaTech.cy. All rights reserved.</p>
+            <div class="flex space-x-6 text-sm">
+                <a href="#services" class="hover:text-white transition">Services</a>
+                <a href="#about" class="hover:text-white transition">About</a>
+                <a href="#contact" class="hover:text-white transition">Contact</a>
+            </div>
+        </div>
+    </footer>
+
 </body>
 </html>
